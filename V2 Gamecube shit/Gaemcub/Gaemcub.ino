@@ -26,7 +26,7 @@ void setup() {
 }
 
 void loop() {
-  for(int i = 0; i < sizeof(buttons) ; i++)
+  /*for(int i = 0; i < sizeof(buttons) ; i++)
   {
     if(buttons[i] == btn_up || buttons[i] == btn_down || buttons[i] == btn_left || buttons[i] == btn_right)
     {
@@ -36,6 +36,7 @@ void loop() {
     {
       Serial.println("Value of " + names[i] + "\t is: " + getStatusOfButton(buttons[i]));
     }
-  }
+  }*/
+  Serial.println("BtnA: "+ (String)digitalRead(btn_A));
     delay(150);
   }
